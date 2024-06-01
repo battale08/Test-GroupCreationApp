@@ -21,12 +21,10 @@ const LoginScreen = ({navigation}) => {
     if (name === '') {
       Alert.alert('Error', 'Please enter your Name.');
       return false;
-    }
-    if (name.length < 3) {
+    } else if (name.length < 3) {
       Alert.alert('Error', 'Name Should have At least 3 Characters.');
       return false;
-    }
-    if (containsSpecialCharsAndNumber(name)) {
+    } else if (containsSpecialCharsAndNumber(name)) {
       Alert.alert('Error', 'Enter Valid Name.');
       return false;
     }
