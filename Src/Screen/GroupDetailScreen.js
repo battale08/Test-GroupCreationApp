@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 const GroupDetailsScreen = ({route}) => {
-  const {groupName, selectedContacts} = route?.params;
+  const {groupName, selectedContacts} = route.params;
 
   return (
     <View style={styles.container}>
